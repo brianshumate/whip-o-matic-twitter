@@ -9,7 +9,7 @@ The `bot.js` in `lib` is a modified version of an example included as part
 of the [Twit project](https://github.com/ttezel/twit) and used in compliance
 with that project's license.
 
-OFFICIAL SHOUT OUT AND MAD PROPS TO TOLGA TEZEL!
+OFFICIAL SHOUT OUT AND MAD PROPS TO TOLGA TEZEL (@ttezel)!
 
 ```
 cd whip-o-matic-twitter
