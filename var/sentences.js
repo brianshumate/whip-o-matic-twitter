@@ -1,0 +1,38 @@
+module.exports =
+{ "templates": [
+  "@adjective @propernoun was perfect",
+  "@amount people appeared at the @adjective jam session in @place at @time",
+  "He picked up a @noun and hit me upside the @noun once and in the @noun @amount times",
+  "I also @pastverb in front of a @adjective @noun",
+  "I love you like @noun",
+  "I @pastverb a lot of @noun",
+  "I saw @propernoun jamming live to a crowd of @amount in @place at @time on @date",
+  "I then got off the @adjective @noun and @pastverb like a @adjective @noun",
+  "I whipped @propernoun's ass",
+  "I whipped @propernoun's ass for @durations on @day",
+  "It whipped a @noun's ass",
+  "It whipped a @noun's ass for @durations",
+  "It whipped a @noun's ass real good",
+  "@name can really jam hard like a @adjective @noun",
+  "@name was mad as a @noun",
+  "@name threatened my life with a @weapon",
+  "@name tried to @verb my @adjective @noun at least @amount times",
+  "@name pointed a @weapon at me in @place at @time on @date",
+  "Rock the @noun on @noun",
+  "Stop the @noun",
+  "Suddenly, @noun and @noun went to @place and rocked the @noun",
+  "The @adjective joyride transformed into a @adjective @noun",
+  "The @adjective @noun was out of this world",
+  "The @adjective @noun weighed @mass at @time",
+  "The @noun is the reason why people @verb you",
+  "The @noun was whipping the @noun's ass",
+  "The year was @year and I had a @adjective @noun with @propernoun",
+  "Tree my @noun and @verb me off my @noun",
+  "When I went to @place that same @day, I picked up a @noun",
+  "You can really @verb with @name's @noun",
+  "You are the most dangerous @noun that I have ever felt",
+  "You used to be the @adjective @noun of the @noun",
+  "Your @adjective @noun is the @noun to our @noun"
+  ]
+}
+

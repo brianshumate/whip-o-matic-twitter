@@ -1,0 +1,19 @@
+{
+  "name": "whip-o-matic-twitter",
+  "version": "0.0.4",
+  "description": "The whip-o-matic Twitter bot",
+  "main": "index.js",
+  "dependencies" : {
+    "oauth" : "0.9.9",
+    "twit"  : "1.1.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Twitter"
+  ],
+  "author": "Brian Shumate",
+  "license": "BSD"
+}
+
