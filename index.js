@@ -14,7 +14,7 @@ var Bot = require('./lib/bot'),
 
 var bot = new Bot(config);
 
-console.log('[i] whip-o-matic ready to whip a lemur\'s ass...');
+console.log('[*] whip-o-matic ready to whip a lemur\'s ass...');
 
 var initialize = function initialize() {
 	regex = generateRegExp();
@@ -102,17 +102,19 @@ setInterval(function() {
     if(err) return handleError(err)
     console.log('[i] Followers: ' + reply.ids.length.toString());
   });
+
   var rand = Math.random();
 
   //  Toot a phrase
-  if(rand <= 0.05) {
+  if(rand <= 0.75) {
 
-      var phrase = initialize();
+      var phrase = initialize().toUpperCase();
 
       bot.tweet(phrase, function (err, reply) {
         if(err) return handleError(err);
 
         console.log('[+] Tweet: ' + (reply ? reply.text : reply));
+        process.exit(0);
     });
 
   } else if(rand <= 0.01) { //  Make a friend
@@ -121,6 +123,7 @@ setInterval(function() {
 
       var name = reply.screen_name;
       console.log('[+] Mingle: followed @' + name);
+      process.exit(0);
     });
   } else {                  //  Prune a friend
     bot.prune(function(err, reply) {
@@ -128,12 +131,14 @@ setInterval(function() {
 
       var name = reply.screen_name
       console.log('[-] Prune: unfollowed @'+ name);
+      process.exit(0);
     });
   }
 }, 10000);
 
 function handleError(err) {
-  console.error('[!] Response status:', err.statusCode);
-  console.error('[!] Error data:', err);
+  console.error('[e] Response status:', err.statusCode);
+  console.error('[e] Error data:', err.data);
+  process.exit(1);
 }
 
