@@ -24,9 +24,9 @@ var initialize = function initialize() {
 
 var generateRegExp = function generateRegExp() {
 
-	var str = '';
-	var arr = [];
-	var tmp = "@(types)";
+	var str = '',
+	    arr = [],
+	    tmp = "@(types)";
 
 	for(type in corpus) {
 		arr.push(type);
@@ -40,15 +40,13 @@ var generateRegExp = function generateRegExp() {
 // Generate a joyous phrase ride
 function generatePhrase() {
 
-	var type;
-	var match;
-	var index;
-	var intro;
-	var output;
-
-	var template = sentences.templates[(Math.random() * sentences.templates.length) | 0];
-
-	var data = {};
+	var data = {},
+	    index,
+	    intro,
+	    match,
+	    output,
+      template = sentences.templates[(Math.random() * sentences.templates.length) | 0],
+      type;
 
 	for(var prop in corpus) {
 
@@ -62,7 +60,7 @@ function generatePhrase() {
 		type = result[1];
 		match = result[0];
 
-		index = (Math.random() * data[type].length) | 0;
+    index = (data && data[type]) ? (Math.random() * data[type].length) : 0;
 		template = template.replace(match, data[type].splice(index, 1)[0]);
 
 		regex.lastIndex = 0;
