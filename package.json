@@ -1,19 +1,27 @@
 {
   "name": "whip-o-matic-twitter",
-  "version": "0.0.4",
-  "description": "The whip-o-matic Twitter bot",
+  "version": "0.0.5",
+  "description": "Twitter bot using corpus based on Wesley Willis lyrics",
   "main": "index.js",
-  "dependencies" : {
-    "oauth" : "0.9.9",
-    "twit"  : "1.1.12"
+  "dependencies": {
+    "twit": "~1.1.12"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brianshumate/whip-o-matic-twitter.git"
+  },
   "keywords": [
-    "Twitter"
+    "Twitter",
+    "bot"
   ],
   "author": "Brian Shumate",
-  "license": "BSD"
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/brianshumate/whip-o-matic-twitter/issues"
+  },
+  "homepage": "http://whipomatic.com/"
 }
-
