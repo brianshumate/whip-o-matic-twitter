@@ -61,7 +61,7 @@ function generatePhrase() {
 		match = result[0];
 
     index = (data && data[type]) ? (Math.random() * data[type].length) : 0;
-		template = template.replace(match, data[type].splice(index, 1)[0]);
+		template = (data && data[type]) ? template.replace(match, data[type].splice(index, 1)[0]) : 0;
 
 		regex.lastIndex = 0;
 		result = regex.exec(template);
