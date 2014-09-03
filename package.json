@@ -1,6 +1,6 @@
 {
   "name": "whip-o-matic-twitter",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Twitter bot using corpus based on Wesley Willis lyrics",
   "main": "index.js",
   "dependencies": {

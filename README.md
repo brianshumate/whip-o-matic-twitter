@@ -26,6 +26,6 @@ MORE TIME PASSES
 
 ```
 npm install
-node index.js
+node .
 ```
 
