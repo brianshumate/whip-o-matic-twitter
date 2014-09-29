@@ -34,5 +34,5 @@ module.exports =
   "You used to be the @adjective @noun of the @noun",
   "Your @adjective @noun is the @noun to our @noun"
   ]
-}
+};
 
