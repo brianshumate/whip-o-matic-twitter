@@ -113,20 +113,12 @@ setInterval(function() {
         process.exit(0);
     });
 
-  } else if (rand <= 0.01) { //  Make a friend
+  } else (rand <= 0.01) { //  Make a friend
     bot.mingle(function(err, reply) {
       if (err) return handleError(err);
 
       var name = reply.screen_name;
       console.log('[+] Mingle: followed @' + name);
-      process.exit(0);
-    });
-  } else {                  //  Prune a friend
-    bot.prune(function(err, reply) {
-      if (err) return handleError(err);
-
-      var name = reply.screen_name;
-      console.log('[-] Prune: unfollowed @'+ name);
       process.exit(0);
     });
   }
